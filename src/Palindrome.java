@@ -6,7 +6,8 @@ public class Palindrome {
         }
 
     }
-    public static String reverseString(String Strings)
+
+    public static String reverseString(String Strings)  //Создание метода, который полностью меняет символы в строке
     {
         String str = "";
         for (int i = Strings.length() - 1; i>=0; i--)
@@ -16,7 +17,7 @@ public class Palindrome {
         return str;
     }
 
-    public static boolean isPalindrome(String s)
+    public static boolean isPalindrome(String s) //Метод, который переварачивает слово и сравнивает его
     {
         String str = reverseString(s);
         return s.equals(str);
